@@ -93,7 +93,7 @@
         -moz-box-sizing: border-box;
         text-align: center;
         line-height: 100px;
-        padding: 50px
+        padding-top: 50px
         font-family: Impact, sans-serif;
         font-size: 80px;
         color: white;
@@ -538,7 +538,10 @@
           muteButton.innerHTML = '▶' // modifica a legenda do botão
           piao.className = '' // faz com que o pião pare de rodar
         }  
-      })  
+      })
+      document.querySelector('audio').play()
+      document.querySelector('#mute').innerHTML = '❚❚'
+      document.querySelector('div#piao').className = 'rodando'
     }())    
 
   </script>
